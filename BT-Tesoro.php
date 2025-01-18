@@ -2,7 +2,7 @@
 /*
 Plugin Name: BT Tesoro Payment Gateway
 Description: Banco del Tesoro C2P payment gateway integration for WooCommerce
-Version: 1.0
+Version: 1.1.0
 Author: Abdullah Fares
 */
 

@@ -6,7 +6,7 @@ use Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodTyp
 final class WC_BT_Tesoro_Blocks extends AbstractPaymentMethodType {
 
     private $gateway;
-    protected $name = 'bt-tesoro'; // Your payment gateway name
+    protected $name = 'bt-tesoro'; 
 
     public function initialize() {
         $this->settings = get_option('woocommerce_bt_tesoro_settings', []);
