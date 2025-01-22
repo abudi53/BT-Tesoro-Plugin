@@ -1,67 +1,62 @@
 # BT Tesoro Payment Gateway
 
-**Versión:** 1.0  
-**Autor:** Abdullah Fares
+**Version:** 1.1  
+**Author:** Abdullah Fares
 
-## Descripción
+## Description
 
-BT Tesoro Payment Gateway es un plugin para WooCommerce que integra la pasarela de pago C2P del Banco del Tesoro. Este plugin permite a los usuarios realizar pagos de manera segura y eficiente directamente desde la página de pago de WooCommerce. Además, es compatible con los bloques de WooCommerce, ofreciendo una experiencia de compra mejorada y moderna.
+Botón de Pago (C2P) Banco del Tesoro Payment Gateway for WooCommerce is a plugin for WooCommerce that integrates Banco del Tesoro's C2P payment gateway. This plugin allows users to make payments securely and efficiently directly from the WooCommerce checkout page.
 
-## Características
+## Features
 
-- **Integración con C2P Banco del Tesoro:** Permite a los clientes realizar pagos utilizando el sistema C2P del Banco del Tesoro.
-- **Compatibilidad con WooCommerce Blocks:** Asegura una integración fluida con los bloques de pago de WooCommerce, mejorando la experiencia del usuario.
-- **Campos Personalizados:** Incluye campos como Cédula, Banco, Teléfono y Clave C2P para recopilar información necesaria durante el proceso de pago.
-- **Soporte para Retries y Reembolsos:** Ofrece funcionalidades para gestionar reembolsos y seguimiento de pedidos.
-- **Traducciones:** Soporte para múltiples idiomas, facilitando su uso en diferentes regiones.
+- **Integration with C2P Banco del Tesoro:** Allows customers to make payments using Banco del Tesoro's C2P system.
+- **Custom Fields:** Includes fields such as Identification Number, Bank, Phone, and C2P Key to collect necessary information during the payment process.
 
-## Instalación
+## Installation
 
-1. **Descargar el Plugin:**
+1. **Download the Plugin:**
 
-   - Clona el repositorio o descarga el archivo ZIP del plugin.
+   - Clone the repository or download the plugin's ZIP file.
 
-2. **Subir a WordPress:**
+2. **Upload to WordPress:**
 
-   - Ve a tu panel de administración de WordPress.
-   - Navega a **Plugins > Añadir nuevo**.
-   - Haz clic en **Subir plugin** y selecciona el archivo ZIP descargado.
-   - Haz clic en **Instalar ahora** y luego en **Activar**.
+   - Go to your WordPress admin panel.
+   - Navigate to **Plugins > Add New**.
+   - Click on **Upload Plugin** and select the downloaded ZIP file.
+   - Click on **Install Now** and then on **Activate**.
 
-3. **Configurar el Plugin:**
-   - Después de la activación, ve a **WooCommerce > Ajustes > Pagos**.
-   - Activa **Pago C2P Banco del Tesoro** y configura las opciones según tus necesidades.
+3. **Configure the Plugin:**
+   - After activation, go to **WooCommerce > Settings > Payments**.
+   - Activate **Botón de Pago (C2P) Banco del Tesoro Payment Gateway for WooCommerce** and configure the options according to your needs.
 
-## Configuración
+## Configuration
 
-1. **Título y Descripción:**
+1. **Title and Description:**
 
-   - Configura el título que verán los usuarios en la página de pago.
-   - Proporciona una descripción clara sobre el método de pago.
+   - Set the title that users will see on the checkout page.
+   - Set the other fields to match the data given to you by Banco del Tesoro.
+   - Provide a clear description about the payment method.
 
-2. **Campos Personalizados:**
+2. **Custom Fields:**
 
-   - El plugin incluye campos para **Cédula**, **Banco**, **Teléfono** y **Clave C2P**. Asegúrate de que estos campos se ajusten a los requerimientos de tu negocio.
+   - The plugin includes fields for **Identification Number**, **Bank**, **Phone**, and **C2P Key**. Ensure that these fields meet your business requirements.
 
-3. **Compatibilidad con WooCommerce Blocks:**
-   - No se requiere configuración adicional. El plugin se integra automáticamente con los bloques de pago de WooCommerce.
+## Usage
 
-## Uso
+Once installed and configured, customers will be able to select **Botón de Pago (C2P) Banco del Tesoro** on the WooCommerce checkout page. They must complete the required fields to process the payment. The plugin will handle communication with Banco del Tesoro's API to validate and complete the transaction.
 
-Una vez instalado y configurado, los clientes podrán seleccionar **Pago C2P Banco del Tesoro** en la página de pago de WooCommerce. Deberán completar los campos requeridos para procesar el pago. El plugin manejará la comunicación con la API del Banco del Tesoro para validar y completar la transacción.
+## Contribution
 
-## Contribución
+Contributions are welcome. To contribute:
 
-Las contribuciones son bienvenidas. Para contribuir:
+1. **Fork the repository.**
+2. **Create a new branch:** `git checkout -b feature/new-functionality`
+3. **Make your changes and commit:** `git commit -m 'Add new functionality'`
+4. **Push to the branch:** `git push origin feature/new-functionality`
+5. **Open a Pull Request.**
 
-1. **Fork el repositorio.**
-2. **Crea una rama nueva:** `git checkout -b feature/nueva-funcionalidad`
-3. **Realiza tus cambios y haz commit:** `git commit -m 'Añadir nueva funcionalidad'`
-4. **Empuja a la rama:** `git push origin feature/nueva-funcionalidad`
-5. **Abre un Pull Request.**
+Ensure to follow good coding practices and that your changes do not introduce errors.
 
-Asegúrate de seguir las buenas prácticas de codificación y de que tus cambios no introduzcan errores.
+## Support
 
-## Soporte
-
-Si encuentras algún problema o tienes preguntas sobre el uso del plugin, por favor, abre un [issue] en el repositorio de GitHub.
+If you encounter any issues or have questions about using the plugin, please open an [issue] on the GitHub repository.

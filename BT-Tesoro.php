@@ -1,7 +1,9 @@
 <?php
 /*
-Plugin Name: BT Tesoro Payment Gateway
-Description: Banco del Tesoro C2P payment gateway integration for WooCommerce
+Plugin Name: Botón de Pago (C2P) Banco del Tesoro Payment Gateway for WooCommerce
+Description: Botón de Pago (C2P) Banco del Tesoro payment gateway integration for WooCommerce
+license: GPLv2
+icon: assets/logo.png
 Version: 1.1.0
 Author: Abdullah Fares
 */

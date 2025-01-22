@@ -162,23 +162,18 @@ public function process_admin_options() {
 }
 
     public function payment_fields() {
-        $logger = wc_get_logger();
-        $log_context = array('source' => 'bt_tesoro');
 
         $exchange_rate = get_transient('bt_tesoro_exchange_rate');
 
         if (false === $exchange_rate) {
         // Fetch the exchange rate from the API
-            $logger->info('Fetching exchange rate from API: ' . $this->exchange_rate_api_url, $log_context);
             $response_rate = wp_remote_get($this->exchange_rate_api_url);
 
         if (is_wp_error($response_rate)) {
-            $logger->error('Error fetching exchange rate: ' . $response_rate->get_error_message(), $log_context);
             echo '<p><strong>Error al obtener la tasa de cambio.</strong></p>';
         } else {
             $body_rate = wp_remote_retrieve_body($response_rate);
             $data_rate = json_decode($body_rate, true);
-            $logger->info('Exchange rate API response: ' . print_r($data_rate, true), $log_context);
 
             if (isset($data_rate['monitors']['usd']['price'])) {
                 $exchange_rate = floatval($data_rate['monitors']['usd']['price']);
@@ -194,12 +189,10 @@ public function process_admin_options() {
                 // Display the converted amount
                 echo '<p><strong>Total a pagar en Bolívares (BS): </strong>' . esc_html($order_total_bs_formatted) . ' BS</p>';
             } else {
-                $logger->error('Exchange rate not found in API response.', $log_context);
                 echo '<p><strong>Error al obtener la tasa de cambio.</strong></p>';
             }
         }
     } else {
-        $logger->info('Using cached exchange rate: ' . $exchange_rate, $log_context);
 
         // Get the order total in USD
         $order_total_usd = WC()->cart->get_total('numeric');
