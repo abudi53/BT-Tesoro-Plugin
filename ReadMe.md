@@ -48,6 +48,7 @@ Once installed and configured, customers will be able to select **Botón de Pago
 ## Contribution
 
 Contributions are welcome. To contribute:
+https://github.com/abudi53/BT-Tesoro-Plugin
 
 1. **Fork the repository.**
 2. **Create a new branch:** `git checkout -b feature/new-functionality`

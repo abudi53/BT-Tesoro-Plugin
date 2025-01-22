@@ -97,14 +97,12 @@ class WC_BT_Tesoro extends WC_Payment_Gateway {
                 'title'       => 'Código de Afiliado',
                 'type'        => 'text',
                 'description' => 'Código de Afiliado used in API requests.',
-                'default'     => '004036',
                 'desc_tip'    => true
             ],
             'comercio' => [
                 'title'       => 'Comercio',
                 'type'        => 'text',
                 'description' => 'Nombre del Comercio value used in API requests.',
-                'default'     => '',
                 'desc_tip'    => true
             ],
         ];
